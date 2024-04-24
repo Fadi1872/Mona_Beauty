@@ -1,0 +1,146 @@
+[
+    {
+        "id": 0,
+        "name": "Lipstick",
+        "category": "make up",
+        "img": "./assets/MakeUp/m1.webp",
+        "price": "22.5$",
+        "rate": 4.5,
+        "new": false
+    },
+    {
+        "id": 1,
+        "name": "eye liner",
+        "category": "make up",
+        "img": "./assets/MakeUp/m2.webp",
+        "price": "24.5$",
+        "rate": 5,
+        "new": false
+    },
+    {
+        "id": 2,
+        "name": "eye shadow",
+        "category": "make up",
+        "img": "./assets/MakeUp/m3.webp",
+        "price": "22.5$",
+        "rate": 4,
+        "new": true
+    },
+    {
+        "id": 3,
+        "name": "tissue box",
+        "category": "accessories",
+        "img": "./assets/Accessories/a1.webp",
+        "price": "105$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 4,
+        "name": "round container",
+        "category": "accessories",
+        "img": "./assets/Accessories/a2.webp",
+        "price": "81$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 5,
+        "name": "vanit tray",
+        "category": "accessories",
+        "img": "./assets/Accessories/a3.webp",
+        "price": "76$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 6,
+        "name": "waste basket",
+        "category": "accessories",
+        "img": "./assets/Accessories/a4.webp",
+        "price": "155$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 7,
+        "name": "vanity bag",
+        "category": "accessories",
+        "img": "./assets/Accessories/a5.webp",
+        "price": "82$",
+        "rate": 4,
+        "new": true
+    },
+    {
+        "id": 8,
+        "name": "Lipstick",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "22.5$",
+        "rate": 4.5,
+        "new": false
+    },
+    {
+        "id": 9,
+        "name": "eye liner",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "24.5$",
+        "rate": 5,
+        "new": false
+    },
+    {
+        "id": 10,
+        "name": "eye shadow",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "22.5$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 11,
+        "name": "tissue box",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "105$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 12,
+        "name": "round container",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "81$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 13,
+        "name": "vanit tray",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "76$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 14,
+        "name": "waste basket",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "155$",
+        "rate": 4,
+        "new": false
+    },
+    {
+        "id": 15,
+        "name": "vanity bag",
+        "category": "bundles",
+        "img": "./assets/Bundles/b1.webp",
+        "price": "82$",
+        "rate": 4,
+        "new": true
+    }
+]

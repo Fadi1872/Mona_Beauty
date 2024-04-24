@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --pink: #f2dadf;
+  --beige: #73645c;
+  --white: #fff8e1;
+  --gray: #f8f9fa;
+
+  --header-font: "DM Serif Display", cursive;
+  --paragraph-font: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--beige);
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/* classes to be used overall website */
+
+.glass {
+  background-color: #fff5;
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+}
+
+.main_button {
+  background-color: var(--beige);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: var(--white);
+  text-wrap: nowrap;
+}
+
+.big_header {
+  font-size: 5rem;
+  font-family: var(--header-font);
+  line-height: 90%;
+}
+
+.big_header.smaller {
+  font-size: 3rem;
+}
+
+.big_header span {
+  color: var(--beige);
+}
+
+.sub-big_header {
+  font-size: 1.1rem;
+}
+
+.sub_title {
+  font-size: 1.8rem;
+  font-family: var(--header-font);
+}
+
+.back_img {
+  background: var(--img-url) no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+/* end of classes to be used in overall website */
+
+/* navbar styles */
+.nav_logo {
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+}
+
+.nav_links a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.open {
+  transform: translateX(0%) !important;
+}
+/* end of navbar styles */
+
+.min-height {
+  min-height: 40%;
+}
+
+.custom_card-body {
+  background-color: var(--gray);
+  border-radius: 8px;
+}
+
+.products_viewer {
+  height: 300px;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: var(--beige) !important;
+}
+
+.footer {
+  background-color: var(--beige);
+}
+
+@media screen and (max-width: 991px) {
+  .nav_links {
+    transition: 0.5s;
+    transform: translateX(100%);
+    position: fixed;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav_links{
+    width: 100%;
+  }
+  .big_header {
+    font-size: 3rem;
+  }
+  .big_header.smaller {
+    font-size: 2.5rem;
+  }
+}
