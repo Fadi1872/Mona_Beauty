@@ -1,17 +1,16 @@
 const p = document.querySelectorAll(".productNumber");
 
-let makeupNum = 0,
-  accessoriesNum = 0,
-  bundlesNum = 0;
+let numbers = [0, 0, 0];
 const countProduct = (data) => {
   data.forEach((element) => {
-    if(element.category == 'make up') makeupNum++
-    else if(element.category == 'accessories') accessoriesNum++
-    else if(element.category == 'bundles') bundlesNum++
+    if (element.category == "make up") numbers[0]++;
+    else if (element.category == "accessories") numbers[1]++;
+    else if (element.category == "bundles") numbers[2]++;
   });
-  p[0].innerHTML = `${makeupNum} products`
-  p[1].innerHTML = `${accessoriesNum} products`
-  p[2].innerHTML = `${bundlesNum} products`
+
+  p.forEach((element, index) => {
+    element.innerHTML = `${numbers[index]} products`;
+  });
 };
 
 fetch("./data/products.json")
