@@ -175,10 +175,17 @@ body::-webkit-scrollbar {
   aspect-ratio: 1;
   border-radius: 8px;
 }
+.cart_button{
+  width: 75%;
+}
 .trans span{
   transform: translateY(-8%);
 }
 
+.checkout_form{
+  background-color: var(--gray);
+  border-radius: 10px;
+}
 
 
 @media screen and (max-width: 991px) {
@@ -199,7 +206,7 @@ body::-webkit-scrollbar {
   .cart_img{
     width: 40px;
   }
-  #cart{
+  #cart, .cart_button{
     width: 100% !important;
   }
 }
