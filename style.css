@@ -187,7 +187,6 @@ body::-webkit-scrollbar {
   border-radius: 10px;
 }
 
-
 @media screen and (max-width: 991px) {
   .nav_links {
     transition: 0.5s;

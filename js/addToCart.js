@@ -1,7 +1,7 @@
 // handle adding to cart button on the product page
 const handleAddToCart = (id) => {
   let cart = JSON.parse(localStorage.getItem("cart"));
-  console.log(cart);
+
   if (!cart) {
     let cart = [];
     cart.push({
@@ -79,10 +79,11 @@ const handleProduct = (id, method) => {
   cart.forEach((element, index) => {
     if (element.id == id) productId = index;
   });
+
   if (method) cart[productId].quantity++;
   else {
     cart[productId].quantity--;
-    if (cart[productId].quantity == 0) cart.pop(productId);
+    if (cart[productId].quantity == 0) cart.splice(productId, 1);
   }
   localStorage.setItem("cart", JSON.stringify(cart));
   addItemsToCard(response_cart);
