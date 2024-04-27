@@ -4,6 +4,6 @@ const toggle = document.querySelector("#toggle");
 [navLinks, toggle].forEach((element) => {
   element.addEventListener("click", () => {
     navLinks.classList.toggle("open");
-    console.log('element clicked ', element);
+    console.log("element clicked ", element);
   });
 });

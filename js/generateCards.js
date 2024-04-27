@@ -1,4 +1,6 @@
 const product_container = document.querySelector("#product_container");
+// the filters
+const radio = document.querySelectorAll(".radio");
 
 const addCard = (card) => {
   product_container.innerHTML += `
@@ -8,7 +10,7 @@ const addCard = (card) => {
         class="products_viewershort back_img d-flex align-items-end"
         style="--img-url: url('${card.img}')"
       >
-        <p class="price mb-0 ps-3 text-dark">${card.price}</p>
+        <p class="price mb-0 ps-3 text-dark">${card.price}$</p>
       </div>
       <div class="p-3">
         <div
@@ -36,7 +38,7 @@ const addCard = (card) => {
           <p class="px-3 py-1 category d-inline rounded-5 mb-0">
           ${card.category}
           </p>
-          <button type="button" class="main_button py-2 px-3">
+          <button type="button" class="main_button py-2 px-3" onclick="handleAddToCart(${card.id})">
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
@@ -46,10 +48,36 @@ const addCard = (card) => {
     `;
 };
 
+let category = "any";
+let response;
+
+const filterCards = (cards) => {
+  product_container.innerHTML = "";
+  if (category === "any")
+    cards.forEach((card) => {
+      addCard(card);
+    });
+  else {
+    let filteredCards = [];
+    cards.forEach((card) => {
+      if (card.category === category) {
+        filteredCards.push(card);
+      }
+    });
+    filteredCards.forEach((card) => addCard(card));
+  }
+};
+
+radio.forEach((element) => {
+  element.addEventListener("change", function () {
+    category = this.value;
+    filterCards(response);
+  });
+});
+
 fetch("./data/products.json")
   .then((res) => res.json())
-  .then((res) =>
-    res.forEach((element) => {
-      addCard(element);
-    })
-  );
+  .then((res) => {
+    response = res;
+    filterCards(res);
+  });
